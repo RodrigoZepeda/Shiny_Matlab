@@ -84,7 +84,7 @@ y tener la siguiente Imagen:
 
 ![Modelo SIR](modelo_sir.jpg)
 
-Esto está muy bonito para alguien que está familiarizado con correr funciones desde una ventana de comandos (como la de Matlab). ¿Pero qué pasa si un médico sin conocimiento de matemáticas ni programación desea saber cómo evolucionará una enfermedad? Una opción es que le hable a su matemático de cabecera y le pida vuelva a correr Matlab con diferentes valores de *α* y *β* según la investigación proponga. Una mejor opción es dejar una interfaz Imagen que permita cambiar los valores de *α* y *β* dinámicamente. Para ello utilizaremos HTML.
+Esto está muy bonito para alguien que está familiarizado con correr funciones desde una ventana de comandos (como la de Matlab). ¿Pero qué pasa si un médico sin conocimiento de matemáticas ni programación desea saber cómo evolucionará una enfermedad? Una opción es que le hable a su matemático de cabecera y le pida vuelva a correr Matlab con diferentes valores de *α* y *β* según la investigación proponga. Una mejor opción es dejar una interfaz gráfica que permita cambiar los valores de *α* y *β* dinámicamente. Para ello utilizaremos HTML.
 
 HTML
 ----
