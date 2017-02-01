@@ -13,4 +13,4 @@ To use the App download all files and open `Modelo_SIR.html` with Matlab's brows
 
 *Para usar la aplicación descarga todos los archivos y abre `Modelo_SIR.html` con el navegador de Matlab (**esto sólo funciona con el navegador de Matlab**).
 
-*Para un tutorial en español de cómo fue creada la app [da click aquí](https://github.com/RodrigoZepeda/Shiny_Matlab/blob/master/Interactive_Matlab_Apps.md).*
+*Para un tutorial en español de cómo fue creada la app [da click aquí](https://github.com/RodrigoZepeda/Shiny_Matlab/blob/master/Tutorial/Interactive_Matlab_Apps.md).*
