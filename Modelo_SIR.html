@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Titulo de pagina asombrosa</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            
+            $("#boton").click( function(){
+                var valor_alpha = $("#alpha").val();
+                var valor_beta  = $("#beta").val();
+                var valor_s0    = $("#s0").val();
+                var valor_i0    = $("#i0").val();
+                var valor_r0    = $("#r0").val();
+                document.location = "matlab:modelosir(" + valor_alpha + "," +
+                        valor_beta + "," + valor_s0 + "," + valor_i0 + "," +
+                        valor_r0 + ")";
+                setTimeout("document.getElementById('contiene_imagen').src='modelo.png';",500);
+            });
+        });
+    </script>
+  </head>
+  
+  <body>
+        <div class="panel panel-primary" style = "width: 40%; 
+             float: left; margin: 2%;">
+            <div class="panel-heading">
+                <h3>Modelo SIR</h3>
+            </div>
+            <div class="panel-body">
+                <h5> Alfa </h5>
+                <input type="number" class="form-control" id="alpha" 
+                       value = "0.9">
+                <h5> Beta </h5>
+                <input type="number" class="form-control" id="beta" 
+                       value = "0.01">
+                <h5> Susceptibles iniciales </h5>
+                <input type="number" class="form-control" id="s0" 
+                       value = "0.99">
+                <h5> Infectados iniciales </h5>
+                <input type="number" class="form-control" id="i0" 
+                       value = "0.01">
+                <h5> Recuperados iniciales </h5>
+                <input type="number" class="form-control" id="r0" 
+                       value = "0">
+                <a href="#" class="btn btn-info" style = "margin-top: 2%;" id ="boton">
+                    Calcular</a>
+            </div>
+        </div>
+        <div class="panel panel-primary" style = "width: 40%; 
+             float: right; margin: 2%;">
+            <div class="panel-heading">
+                <h3>Imagen</h3>
+            </div>
+            <div class="panel-body">
+                <img id ='contiene_imagen' src="" style="width: 100%;">
+            </div>
+        </div>
+      
+  </body>
+  
+</html>
